@@ -11,12 +11,10 @@ const MainBanner = () => {
   return (
     <div>
       <Swiper
-        pagination={true}
+        loop={true}
         slidesPerView={1}
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         className="mySwiper"
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         autoplay
       >
         <SwiperSlide>
