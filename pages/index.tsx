@@ -6,6 +6,7 @@ import About from '../Components/About'
 import BannerSlide from '../Components/BannerSlide'
 import Blog from '../Components/Blog'
 import Card from '../Components/Card'
+import WhyChoose from '../Components/WhyChoose'
 import Footer from '../Components/Footer'
 import LotteBanner from '../Components/LotteBanner'
 import MainBanner from '../Components/MainBanner'
@@ -45,6 +46,9 @@ export default function Home() {
       </div>
       <div>
         <About />
+      </div>
+      <div>
+        <WhyChoose />
       </div>
       <div>
         <Blog />
