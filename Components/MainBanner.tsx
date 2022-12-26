@@ -92,7 +92,7 @@ const MainBanner = () => {
                 </select>
               </div>
               <div>
-                <button className="btn rounded-none btn-primary hover:btn-secondary w-full max-w-xs">
+                <button className="btn rounded-none btn-secondary hover:btn-primary w-full max-w-xs">
                   <FaSearchLocation className="mr-3" /> Find Now
                 </button>
               </div>
@@ -174,7 +174,7 @@ const MainBanner = () => {
                 </select>
               </div>
               <div>
-                <button className="btn rounded-none btn-primary hover:btn-secondary w-full max-w-xs">
+                <button className="btn rounded-none btn-secondary hover:btn-primary w-full max-w-xs">
                   <FaSearchLocation className="mr-3" /> Find Now
                 </button>
               </div>
@@ -257,7 +257,7 @@ const MainBanner = () => {
                 </select>
               </div>
               <div>
-                <button className="btn rounded-none btn-primary hover:btn-secondary w-full max-w-xs">
+                <button className="btn rounded-none btn-secondary hover:btn-primary w-full max-w-xs">
                   <FaSearchLocation className="mr-3" /> Find Now
                 </button>
               </div>
