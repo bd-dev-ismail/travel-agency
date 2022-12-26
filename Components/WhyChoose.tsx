@@ -3,7 +3,7 @@ import {AiFillStar, AiFillLike} from 'react-icons/ai'
 import {GiEarthAmerica} from 'react-icons/gi'
 const WhyChoose = () => {
     return (
-        <div className={`w-full bg-[url(https://themes.themegoods.com/altair/demo/wp-content/uploads/2014/10/1600x1200-12.jpg)] bg-cover lg:p-20 sm:p-10 p-5 text-center`}>
+        <div className={`w-full bg-[url(https://themes.themegoods.com/altair/demo/wp-content/uploads/2014/10/1600x1200-12.jpg)] bg-cover lg:p-20 sm:p-10 p-5 text-center text-black`}>
             <h1 className='text-white mb-20 font-bold text-3xl'>WHY CHOOSE US</h1>
             <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-20 max-w-5xl mx-auto'>
                 {/* 1st div  */}
