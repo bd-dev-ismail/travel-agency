@@ -14,6 +14,7 @@ import Navbar from '../Components/Navbar'
 import Slider from '../Components/Slider'
 import Stars from '../Components/Stars'
 import WhyUs from '../Components/WhyUs'
+import SixButton from '../Components/SixButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,12 @@ export default function Home() {
         <MainBanner />
       </div>
 
+       {/* six button div  */}
+      <div className='my-10 max-w-4xl mx-auto'>
+        <SixButton />
+      </div>
+
+      
       <div className="hidden lg:block">
         <Slider />
       </div>
