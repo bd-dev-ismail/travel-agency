@@ -15,6 +15,7 @@ import Slider from '../Components/Slider'
 import Stars from '../Components/Stars'
 import WhyUs from '../Components/WhyUs'
 import SixButton from '../Components/SixButton'
+import BookNow from '../Components/BookNow'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,9 +35,10 @@ export default function Home() {
        {/* six button div  */}
       <div className='my-10 max-w-4xl mx-auto'>
         <SixButton />
+        <BookNow />
       </div>
 
-      
+
       <div className="hidden lg:block">
         <Slider />
       </div>
