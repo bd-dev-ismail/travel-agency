@@ -4,6 +4,7 @@ import banner1 from '../images/About-image/15.jpg'
 import animate from '../images/Contact/91188-contact-blue.json'
 import Lottie from 'lottie-react'
 import Review from "../Components/AboutPage/Review";
+import ContactFrom from '../Components/AboutPage/ContactFrom'
 
 const Contact = () => {
     return (
@@ -20,27 +21,7 @@ const Contact = () => {
                     </div>
                </div>
             {/* Contact page start */}
-            <div className="bg-white">
-            <div className=" ">
-                <div className=" flex items-center flex-col lg:flex-row px-3 lg:px-14">
-                    <div className="w-full lg:w-1/2 ">
-
-                    <Lottie animationData={animate} />
-                    </div>
-                   <div className="w-full h-[430px]  lg:w-1/2 bg-primary p-5 rounded">
-                   <input type="text" placeholder="Enter your name" className="input mt-8 input-bordered w-full" /> 
-                   <br />
-                   <input type="email" placeholder="Enter email address" className="input my-8 input-bordered w-full " />
-                   <br />
-                   <textarea className="textarea w-full mb-8 py-4" placeholder="Type your keyword"></textarea>
-                   <br />
-
-                   <button className="btn bg-secondary mb-7">Send Message</button>
-                  </div>
-                </div>
-            </div>
-
-            </div>
+            <ContactFrom />
             {/* Contact page start */}
 
             {/* Review start */}

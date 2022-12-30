@@ -5,7 +5,7 @@ import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
 import SixButton from '../../Components/SixButton';
 import {signIn, signOut} from 'next-auth/react'
-
+ 
 const login = () => {
     let [show, setShow] = useState(false)
     let [err, setErr] = useState('')
