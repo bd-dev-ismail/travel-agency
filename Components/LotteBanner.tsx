@@ -11,7 +11,7 @@ const LotteBanner = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center gap-5">
+          <div className="flex flex-col justify-center gap-5 text-black">
             <h1 className="text-3xl text-center font-bold">
               “A journey of a thousand miles, <br /> Begins with a single step”
             </h1>
