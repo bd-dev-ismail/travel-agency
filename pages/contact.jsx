@@ -14,10 +14,10 @@ const Contact = () => {
                 <Navbar />
             </div>
             {/* navbar end*/}
-               <div className="bg-opacity-20 flex items-center pl-10 lg:pl-48 bg-black h-[300px] lg:h-[500px]">
+               <div className="bg-opacity-20 flex items-center text-center justify-center bg-black h-[300px] lg:h-[500px]">
                     <div>
-                        <p className="text-xl text-white">GET IN TOUCH</p>
-                        <h1 className="text-5xl mt-1 font-bold text-white">CONTACT <span className="text-primary">US</span></h1>
+                        <p className="text-3xl text-gray-300 opacity-50 font-bold">GET IN TOUCH</p>
+                        <h1 className="text-6xl mt-2 font-bold text-white">CONTACT <span className="text-primary">US</span></h1>
                     </div>
                </div>
             {/* Contact page start */}

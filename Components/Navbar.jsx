@@ -54,9 +54,9 @@ const Navbar = () => {
               </div>
               <Link
                 href="/"
-                className="btn btn-ghost normal-case text-white text-xl"
+                className="cursor-pointer normal-case text-white text-xl"
               >
-                <Image src={logo} height={50} width={170} />
+                <Image src={logo}  width={110} />
               </Link>
             </div>
             <div className="navbar-center hidden lg:flex text-black font-semibold navbar-end">
