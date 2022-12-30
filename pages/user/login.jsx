@@ -19,7 +19,7 @@ const login = () => {
 
     return (
         <div className='min-h-screen flex flex-col justify-between'>
-            <SixButton/>
+            
             <div className='bg-blue-900 shadow-2xl'>
                 <Navbar />
             </div>

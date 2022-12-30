@@ -16,7 +16,7 @@ const SixButton = () => {
     }
     return (
       <div className='max-w-4xl'>
-        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 w-fit">
           <div
             className={` shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
               btn === "information"
