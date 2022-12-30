@@ -5,6 +5,8 @@ import {ImLocation} from 'react-icons/im'
 import {AiFillCamera} from 'react-icons/ai'
 import {BsPeopleFill} from 'react-icons/bs'
 import {FaBook} from 'react-icons/fa'
+import Additional from './Additional';
+import Map from './Map';
 const SixButton = () => {
     let [btn, setBtn] = useState('information')
     console.log(btn)
@@ -12,7 +14,7 @@ const SixButton = () => {
         setBtn("")
     }
     return (
-      <>
+      <div className='max-w-4xl'>
         <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6">
           <div
             className={` shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
@@ -93,10 +95,15 @@ const SixButton = () => {
             </p>
           </div>
         </div>
-      <div>
-        {/* Componenet call here  */}
+        <div className='mt-5 p-5'>
+        {
+          btn === 'additional' && <Additional />
+        }
+        {
+          btn === 'location' && <Map />
+        }
       </div>
-      </>
+      </div>
     );
 };
 
