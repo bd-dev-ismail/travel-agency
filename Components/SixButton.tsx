@@ -9,14 +9,6 @@ const SixButton = () => {
     let [btn, setBtn] = useState('information')
     console.log(btn)
     return (
-        <ButtonSection btn={btn} setBtn={setBtn}/>
-    );
-};
-
-export default SixButton;
-
-function ButtonSection ({setBtn, btn}){
-    return (
         <div className='grid grid-cols-6'>
             <div className={`border-y-[1px] font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${btn==='information'? 'scale-90 border-0  bg-blue-100 text-primary' : 'bg-white text-secondary' } `} onClick={()=> setBtn('information')}>
                 <RiFileListFill />
@@ -44,41 +36,6 @@ function ButtonSection ({setBtn, btn}){
             </div>
         </div>
     );
-}
+};
 
-// function Divs({btn}) {
-//     {
-//         btn === 'information' &&
-//     }
-// }
-
-function Information(){
-    return(
-        <div></div>
-    )
-}
-function YourPlan(){
-    return(
-        <div></div>
-    )
-}
-// function Information(){
-//     return(
-//         <div></div>
-//     )
-// }
-// function Information(){
-//     return(
-//         <div></div>
-//     )
-// }
-// function Information(){
-//     return(
-//         <div></div>
-//     )
-// }
-// function Information(){
-//     return(
-//         <div></div>
-//     )
-// }
+export default SixButton;
