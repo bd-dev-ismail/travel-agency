@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
+import SixButton from '../../Components/SixButton';
 import {signIn, signOut} from 'next-auth/react'
 
 const login = () => {
@@ -18,6 +19,7 @@ const login = () => {
 
     return (
         <div className='min-h-screen flex flex-col justify-between'>
+            <SixButton/>
             <div className='bg-blue-900 shadow-2xl'>
                 <Navbar />
             </div>

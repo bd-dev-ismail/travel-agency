@@ -14,22 +14,26 @@ import Navbar from '../Components/Navbar'
 import Slider from '../Components/Slider'
 import Stars from '../Components/Stars'
 import WhyUs from '../Components/WhyUs'
+import SixButton from '../Components/SixButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Travel Next -The Best Travel Agency</title>
-      </Head>
+      </Head> */}
+      <div>
       <div className='absolute z-50 w-full'>
         <Navbar />
       </div>
       <div className=''>
         <MainBanner />
       </div>
-
+      <div>
+        <SixButton/>
+      </div>
         <div className="hidden lg:block">
           <Slider />
         </div>
