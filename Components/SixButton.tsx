@@ -9,6 +9,7 @@ import Additional from './Additional';
 import Map from './Map';
 import TourInformation from './TourInformation';
 import Gallery from './Gallery';
+import TourPlan from './TourPlan';
 const SixButton = () => {
     let [btn, setBtn] = useState('information')
     console.log(btn)
@@ -109,6 +110,9 @@ const SixButton = () => {
         } 
          {
             btn === 'gallery' && <Gallery />
+         }
+         {
+          btn === 'yourplan' && <TourPlan />
          }
       </div>
       </div>
