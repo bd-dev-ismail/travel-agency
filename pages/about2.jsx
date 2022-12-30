@@ -21,7 +21,7 @@ const about = () => {
                     <h5 className="text-xl uppercase text-primary font-semibold">The best travel agency</h5>
                     <h1 className="text-5xl font-bold uppercase text-[#fff] mt-3">We helping you find <br /> <span className="text-[#2095AE]">your dream</span> vacation</h1>
                 </div>
-
+ 
             </div>
             {/* Heading part end */}
 

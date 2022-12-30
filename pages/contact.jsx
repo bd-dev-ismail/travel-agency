@@ -44,7 +44,9 @@ const Contact = () => {
             {/* Contact page start */}
 
             {/* Review start */}
+            <div className="bg-black bg-opacity-20"> 
             <Review />
+            </div>
             {/* Review End */}
 
             {/* Footer start */}
