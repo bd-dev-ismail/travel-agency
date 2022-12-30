@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import {RxPerson} from 'react-icons/rx'
 
 const Navbar = () => {
     return (
@@ -81,6 +81,11 @@ const Navbar = () => {
                     <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
+              </div>
+              <div className="navbar-end text-white">
+                  <Link href='/user/login'>
+                  <RxPerson className="font-bold"/>
+                  </Link>
               </div>
             </div>
           </div>

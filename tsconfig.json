@@ -19,6 +19,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/user/login.js", "pages/user/register.js", "Components/BookNow.js", "Components/SixButton.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/user/login.js", "pages/user/register.jsx", "Components/BookNow.js", "Components/SixButton.jsx", "Components/About.jsx", "Components/Additional.jsx", "Components/BannerSlide.jsx", "Components/Blog.jsx", "Components/BookNow.jsx", "Components/Card.jsx", "Components/FindNow.jsx", "Components/Footer.jsx", "Components/LotteBanner.jsx", "Components/Loading.jsx", "Components/MainBanner.jsx", "Components/Navbar.jsx", "Components/Slider.jsx", "Components/Stars.jsx", "Components/TourDetails.jsx", "Components/TourInformation.jsx", "Components/WhyChoose.jsx", "Components/WhyUs.jsx", "firebase/firebaseApp.js", "pages/addTour/index.jsx", "pages/api/hello.js", "pages/_app.jsx", "pages/_document.jsx", "pages/about.jsx", "pages/index.jsx", "pages/tour.jsx"],
   "exclude": ["node_modules"]
 }
