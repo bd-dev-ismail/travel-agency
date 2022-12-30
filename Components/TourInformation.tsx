@@ -1,5 +1,5 @@
 
-
+import { FaCalendarAlt, FaRegMoneyBillAlt, FaUsers, IconName } from "react-icons/fa";
 const TourInformation = () => {
     return (
       <div>
@@ -11,7 +11,7 @@ const TourInformation = () => {
           </p>
         </div>
         <div>
-          <p>
+          <p className="text-gray-700">
             This is Photoshop’s version of Lorem Ipsum. Proin gravida nibh vel
             velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor,
             nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate
@@ -28,6 +28,24 @@ const TourInformation = () => {
             imperdiet nisi. Proin condimentum fermentum nuam pharetra, erat sed
             fermentum feugiat
           </p>
+        </div>
+        <div>
+          <div className="flex items-center text-gray-700">
+            <FaCalendarAlt className="mr-1 text-primary" />
+            <p>13 Days</p>
+          </div>
+          <div className="flex items-center text-gray-700">
+            <FaUsers className="mr-1 text-primary" />
+            <p>5+ Age</p>
+          </div>
+          <div className="flex items-center text-gray-700">
+            <FaRegMoneyBillAlt className="mr-1 text-primary" />
+            <p>On Budget</p>
+          </div>
+          <div className="flex items-center text-gray-700">
+            <FaCalendarAlt className="mr-1 text-primary" />
+            <p>13 Days</p>
+          </div>
         </div>
       </div>
     );

@@ -7,6 +7,7 @@ import {BsPeopleFill} from 'react-icons/bs'
 import {FaBook} from 'react-icons/fa'
 import Additional from './Additional';
 import Map from './Map';
+import TourInformation from './TourInformation';
 const SixButton = () => {
     let [btn, setBtn] = useState('information')
     console.log(btn)
@@ -101,6 +102,9 @@ const SixButton = () => {
         }
         {
           btn === 'location' && <Map />
+        }
+        {
+            btn === 'information' && <TourInformation/>
         }
       </div>
       </div>
