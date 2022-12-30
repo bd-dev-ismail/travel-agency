@@ -31,7 +31,7 @@ const BookNow = () => {
                         <label htmlFor="floating_location" className="absolute  text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-secondary  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Location</label>
                     </div>
                     <div className="relative w-full max-w-xs font-semibold">
-                        <input required type="text" id="floating_date" className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent border-l-4 border-secondary outline-0 focus:ring-0 focus:border-secondary peer" placeholder=" " name='date' />
+                        <input required type="date" id="floating_date" className="block px-2.5 pb-2.5 pt-4 w-full text-sm text-gray-900 bg-transparent border-l-4 border-secondary outline-0 focus:ring-0 focus:border-secondary peer" placeholder=" " name='date' onChange={()=>setBook(true)}/>
                         <label htmlFor="floating_date" className="absolute  text-gray-400 duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white px-2 peer-focus:px-2 peer-focus:text-secondary  peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 left-1">Date</label>
                     </div>
                     {

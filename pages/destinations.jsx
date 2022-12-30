@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
@@ -66,6 +67,7 @@ const destinations = () => {
         <div className='grid grid-cols-3 gap-10 my-10'>
         {
             bannerSiders1.map((item, idx)=> <div key={idx}>
+            <Link href={'/tour'}>
             <div className="lg:flex gap-6  items-center justify-center ">
               <div className="relative">
                 <Image src={item.img} alt="" className="mb-3 lg:mb-0" />
@@ -86,12 +88,14 @@ const destinations = () => {
                 </div>
               </div>
             </div>
+            </Link>
           </div>)
         }
         </div>
         <div className='grid grid-cols-3 gap-10 my-10'>
         {
             bannerSiders1.map((item, idx)=> <div key={idx}>
+            <Link href={'/tour'}>
             <div className="lg:flex gap-6  items-center justify-center ">
               <div className="relative">
                 <Image src={item.img} alt="" className="mb-3 lg:mb-0" />
@@ -112,6 +116,7 @@ const destinations = () => {
                 </div>
               </div>
             </div>
+            </Link>
           </div>)
         }
         </div>

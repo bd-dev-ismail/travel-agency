@@ -37,7 +37,7 @@ export default function Home() {
         <div className="hidden lg:block">
           <Slider />
         </div>
-        <div>
+        <div className='scale-105'>
           <LotteBanner />
         </div>
         <div className="block lg:hidden">

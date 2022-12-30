@@ -11,6 +11,7 @@ const ReviewSlider = () => {
     return (
         <>
             <Swiper
+                loop={true}
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
