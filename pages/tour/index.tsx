@@ -1,7 +1,8 @@
 import Navbar from "../../Components/Navbar";
+import SixButton from "../../Components/SixButton";
 import TourDetails from "../../Components/TourDetails";
 
-const index = () => {
+const Tour = () => {
     return (
       <div>
         <div className="absolute h-[65vh] lg:h-[95vh] z-50 w-full">
@@ -9,8 +10,9 @@ const index = () => {
         </div>
 
         <TourDetails />
+        {/* <SixButton/> */}
       </div>
     );
 };
 
-export default index;
+export default Tour;
