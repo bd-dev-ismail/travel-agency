@@ -28,7 +28,7 @@ const about = () => {
             </div>
             {/* Heading part end */}
 
-               <div className="bg-white">
+               <div className="backdrop-blur-xl">
                    <About />
                </div>
                
