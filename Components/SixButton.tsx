@@ -8,6 +8,7 @@ import {FaBook} from 'react-icons/fa'
 import Additional from './Additional';
 import Map from './Map';
 import TourInformation from './TourInformation';
+import Gallery from './Gallery';
 const SixButton = () => {
     let [btn, setBtn] = useState('information')
     console.log(btn)
@@ -105,7 +106,10 @@ const SixButton = () => {
         }
         {
             btn === 'information' && <TourInformation/>
-        }
+        } 
+         {
+            btn === 'gallery' && <Gallery />
+         }
       </div>
       </div>
     );
