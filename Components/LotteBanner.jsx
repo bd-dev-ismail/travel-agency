@@ -4,7 +4,7 @@ import animate from "../images/lotte/nature-visite-travel.json";
 const LotteBanner = () => {
     return (
       <div>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 my-20 gap-14">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 mt-20 mb-5 gap-14">
           <div className="">
             <div className="">
               <Lottie animationData={animate} />

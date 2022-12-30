@@ -18,10 +18,10 @@ const SixButton = () => {
       <div className='max-w-4xl'>
         <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6 w-fit">
           <div
-            className={` shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+            className={` border-b-2 font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
               btn === "information"
-                ? "scale-90 border-0  bg-blue-100 text-primary"
-                : "bg-white text-secondary"
+                ? "scale-90 border-0 shadow-2xl bg-blue-100 text-primary"
+                : "bg-white text-secondary "
             } `}
             onClick={() => setBtn("information")}
           >
@@ -31,10 +31,10 @@ const SixButton = () => {
             </p>
           </div>
           <div
-            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+            className={`border-b-2 font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
               btn === "yourplan"
-                ? "scale-90 border-0  bg-blue-100 text-primary"
-                : "bg-white text-secondary"
+                ? "scale-90 border-0 shadow-2xl bg-blue-100 text-primary"
+                : "bg-white text-secondary "
             } `}
             onClick={() => setBtn("yourplan")}
           >
@@ -44,10 +44,10 @@ const SixButton = () => {
             </p>
           </div>
           <div
-            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+            className={`border-b-2 font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
               btn === "location"
-                ? "scale-90 border-0  bg-blue-100 text-primary"
-                : "bg-white text-secondary"
+                ? "scale-90 border-0 shadow-2xl bg-blue-100 text-primary"
+                : "bg-white text-secondary "
             } `}
             onClick={() => setBtn("location")}
           >
@@ -57,10 +57,10 @@ const SixButton = () => {
             </p>
           </div>
           <div
-            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+            className={`border-b-2 font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
               btn === "gallery"
-                ? "scale-90 border-0  bg-blue-100 text-primary"
-                : "bg-white text-secondary"
+                ? "scale-90 border-0 shadow-2xl bg-blue-100 text-primary"
+                : "bg-white text-secondary "
             } `}
             onClick={() => setBtn("gallery")}
           >
@@ -70,10 +70,10 @@ const SixButton = () => {
             </p>
           </div>
           <div
-            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+            className={`border-b-2 font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
               btn === "reviews"
-                ? "scale-90 border-0  bg-blue-100 text-primary"
-                : "bg-white text-secondary"
+                ? "scale-90 border-0 shadow-2xl bg-blue-100 text-primary"
+                : "bg-white text-secondary "
             } `}
             onClick={() => setBtn("reviews")}
           >
@@ -83,10 +83,10 @@ const SixButton = () => {
             </p>
           </div>
           <div
-            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+            className={`border-b-2 font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
               btn === "additional"
-                ? "scale-90 border-0  bg-blue-100 text-primary"
-                : "bg-white text-secondary"
+                ? "scale-90 border-0 shadow-2xl bg-blue-100 text-primary"
+                : "bg-white text-secondary "
             } `}
             onClick={() => setBtn("additional")}
           >
