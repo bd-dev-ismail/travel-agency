@@ -20,7 +20,7 @@ const ContactFrom = () => {
         .then((result) => {
             console.log(result.text);
             toast.success('submitted successfully')
-            
+            event.target.reset()
         }, (error) => {
             console.log(error.text);
         });
