@@ -1,6 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 import {RxPerson} from 'react-icons/rx'
-
+import logo from '../images/logo.png'
 const Navbar = () => {
     return (
       <div>
@@ -57,7 +58,7 @@ const Navbar = () => {
                   href="/"
                   className="btn btn-ghost normal-case text-white text-xl"
                 >
-                  Travel Next
+                  <Image src={logo} width={170} />
                 </Link>
               </div>
               <div className="navbar-center hidden lg:flex text-black font-semibold navbar-end">

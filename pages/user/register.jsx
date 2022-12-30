@@ -1,9 +1,10 @@
 import Lottie from 'lottie-react';
+import Head from 'next/head';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
-
+import * as loginImage from '../../images/lotte/tourist-enjoying-the-walk.json'
 const register = () => {
 
     let [show, setShow] = useState(false)
@@ -25,12 +26,16 @@ const register = () => {
 
     return (
         <div className='min-h-screen flex flex-col justify-between'>
-            <div className='bg-blue-900 shadow-2xl'>
+        <Head>
+        <title>Register - Travel Next -The Best Travel Agency</title>
+      </Head>
+            <div className='bg-blue-900 '>
                 <Navbar />
             </div>
             <div className='md:max-w-7xl w-full mx-auto grid gap-10 md:grid-cols-2 '>
                 <div className='flex flex-col items-center justify-center gap-5 p-10'>
-                    <h1 className='text-5xl italic -mt-10 text-blue-500'>Welcome to NewsCaster</h1>
+                <Lottie animationData={loginImage} />
+                    <h1 className='text-5xl italic -mt-10 text-blue-500'>Welcome to Travel Next</h1>
                 </div>
                 <div className='bg-white p-10 flex flex-col justify-center items-center gap-5'>
                     <h1 className='text-2xl font-bold text-[#097ef6] mb-10'>Register Account</h1>

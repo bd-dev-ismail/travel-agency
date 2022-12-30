@@ -5,7 +5,8 @@ import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
 import SixButton from '../../Components/SixButton';
 import {signIn, signOut} from 'next-auth/react'
-
+import * as loginImage from '../../images/lotte/tourist-enjoying-the-walk.json'
+import Head from 'next/head';
 const login = () => {
     let [show, setShow] = useState(false)
     let [err, setErr] = useState('')
@@ -19,13 +20,16 @@ const login = () => {
 
     return (
         <div className='min-h-screen flex flex-col justify-between'>
-            
-            <div className='bg-blue-900 shadow-2xl'>
+            <Head>
+        <title>Login - Travel Next -The Best Travel Agency</title>
+      </Head>
+            <div className='bg-blue-900'>
                 <Navbar />
             </div>
             <div className='md:max-w-7xl w-full mx-auto grid gap-10 md:grid-cols-2 '>
                 <div className='flex flex-col items-center justify-center gap-5 p-10'>
-                    <h1 className='lg:text-5xl text-3xl text-center italic -mt-10 text-blue-500'>Welcome to TravelNext</h1>
+                <Lottie animationData={loginImage} />
+                    <h1 className='lg:text-5xl text-3xl text-center italic -mt-10 text-blue-500'>Welcome to Travel Next</h1>
                 </div>
                 <div className=' p-10 flex flex-col justify-center items-center gap-5'>
                     <h1 className='text-2xl font-bold text-[#097ef6] mb-10'>Login Account</h1>
@@ -49,7 +53,7 @@ const login = () => {
                         <input className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]' type='submit' value='SUBMIT' />
                         <Link href='/user/register' className='btn border-0 btn-link text-info text-center w-full mt-0'>New Member?</Link>
                     </form>
-                    <button onClick={() => signIn()} className='btn border-0 btn-info text-center text-white rounded-full py-2 mt-10 bg-[#097ef6]'>Connect with Google</button>
+                    {/* <button onClick={() => signIn()} className='btn border-0 btn-info text-center text-white rounded-full py-2 mt-10 bg-[#097ef6]'>Connect with Google</button> */}
                 </div>
             </div>
             <div className='bg-blue-900'>

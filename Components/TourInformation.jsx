@@ -4,10 +4,10 @@ const TourInformation = () => {
     return (
       <div>
         <div>
-          <h3 className="text-4xl">Austria, Swizerland</h3>
+          <h3 className="text-4xl font-bold text-secondary mb-10">Austria, Swizerland</h3>
           <p className="text-gray-700">
             {" "}
-            <span className="text-primary"> $560</span> per person
+            <span className="text-primary font-semibold"> $560</span> per person
           </p>
         </div>
         <div>
@@ -29,7 +29,7 @@ const TourInformation = () => {
             fermentum feugiat
           </p>
         </div>
-        <div>
+        <div className="flex gap-5 my-5">
           <div className="flex items-center text-gray-700">
             <FaCalendarAlt className="mr-1 text-primary" />
             <p>13 Days</p>

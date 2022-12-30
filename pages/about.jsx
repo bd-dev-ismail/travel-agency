@@ -1,23 +1,53 @@
-import Head from 'next/head';
-import React from 'react';
-import About from '../Components/About';
-import Footer from '../Components/Footer';
-import LotteBanner from '../Components/LotteBanner';
-import Navbar from '../Components/Navbar';
+import Navbar from "../Components/Navbar";
+import About from "../Components/About";
+import Footer from "../Components/Footer";
+import Guides from "../Components/AboutPage/Guides";
+import banner1 from '../images/About-image/15.jpg';
+import Review from "../Components/AboutPage/Review";
+import Head from "next/head";
 
 const about = () => {
+
     return (
-        <div className='flex flex-col justify-between min-h-screen'>
+        <div style={{background: `url(${banner1.src})`,backgroundAttachment:'fixed', backgroundPosition:'center', backgroundRepeat:'no-repeat'}}>
             <Head>
-                <title>About - Travel Next -The Best Travel Agency</title>
-            </Head>
-            <div className='bg-blue-900 shadow-2xl'>
-                <Navbar />
+        <title>About Us - Travel Next -The Best Travel Agency</title>
+      </Head>
+            <div className="pt-2 bg-opacity-20 bg-black">
+              <Navbar />
             </div>
-            <div>
-                <About />
+            {/* Navbar end */}
+
+            {/* Heading part start */}
+            <div className="bg-opacity-20 bg-black h-[300px] lg:h-[500px] flex items-center pl-10 lg:px-52">
+                <div className="">
+                    <h5 className="text-xl uppercase text-primary font-semibold">The best travel agency</h5>
+                    <h1 className="text-5xl font-bold uppercase text-[#fff] mt-3">We helping you find <br /> <span className="text-[#2095AE]">your dream</span> vacation</h1>
+                </div>
+ 
             </div>
-            <Footer />
+            {/* Heading part end */}
+
+               <div className="bg-white">
+                   <About />
+               </div>
+               
+               {/* User details start */}
+                  <div>
+                    <Guides />
+                  </div>
+              {/* User details start */}
+
+              {/* user Review start */}
+              <div className="bg-opacity-20 bg-black py-10"> 
+                  <Review />
+              </div>
+              {/* user Review end */}
+
+              {/* Footer */}
+               <div className='bg-blue-900'>
+                <Footer />
+            </div>
         </div>
     );
 };
