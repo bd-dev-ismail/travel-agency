@@ -19,12 +19,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/user/login.js", "pages/user/register.js", "Components/BookNow.js", "Components/SixButton.tsx"],
+  "exclude": ["node_modules"]
 }

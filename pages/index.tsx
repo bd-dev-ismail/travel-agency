@@ -15,6 +15,11 @@ import Slider from '../Components/Slider'
 import Stars from '../Components/Stars'
 import WhyUs from '../Components/WhyUs'
 import SixButton from '../Components/SixButton'
+<<<<<<< HEAD
+import BookNow from '../Components/BookNow'
+import Map from '../Components/Map'
+=======
+>>>>>>> origin/main
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +36,25 @@ export default function Home() {
       <div className=''>
         <MainBanner />
       </div>
+<<<<<<< HEAD
+<Map/>
+       {/* six button div  */}
+      <div className='my-10 max-w-4xl mx-auto'>
+        <SixButton />
+        <BookNow />
+      </div>
+<h1>adada</h1>
+
+      <div className="hidden lg:block">
+        <Slider />
+      </div>
+
+      <div className="block lg:hidden">
+        <BannerSlide />
+      </div>
+
+=======
+>>>>>>> origin/main
       <div>
         <SixButton/>
       </div>
