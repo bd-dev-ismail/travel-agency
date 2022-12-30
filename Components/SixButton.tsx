@@ -8,33 +8,95 @@ import {FaBook} from 'react-icons/fa'
 const SixButton = () => {
     let [btn, setBtn] = useState('information')
     console.log(btn)
+    const change = () => {
+        setBtn("")
+    }
     return (
-        <div className='grid grid-cols-6'>
-            <div className={`border-y-[1px] font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${btn==='information'? 'scale-90 border-0  bg-blue-100 text-primary' : 'bg-white text-secondary' } `} onClick={()=> setBtn('information')}>
-                <RiFileListFill />
-                <p>Information</p>
-            </div>
-            <div className={`border-y-[1px] font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${btn==='yourplan'? 'scale-90 border-0  bg-blue-100 text-primary' : 'bg-white text-secondary' } `} onClick={()=> setBtn('yourplan')}>
-                <BsFillMapFill />
-                <p>Your Plan</p>
-            </div>
-            <div className={`border-y-[1px] font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${btn==='location'? 'scale-90 border-0  bg-blue-100 text-primary' : 'bg-white text-secondary' } `} onClick={()=> setBtn('location')}>
-                <ImLocation />
-                <p>Location</p>
-            </div>
-            <div className={`border-y-[1px] font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${btn==='gallery'? 'scale-90 border-0  bg-blue-100 text-primary' : 'bg-white text-secondary' } `} onClick={()=> setBtn('gallery')}>
-                <AiFillCamera />
-                <p>Gallery</p>
-            </div>
-            <div className={`border-y-[1px] font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${btn==='reviews'? 'scale-90 border-0  bg-blue-100 text-primary' : 'bg-white text-secondary' } `} onClick={()=> setBtn('reviews')}>
-                <BsPeopleFill />
-                <p>Reviews</p>
-            </div>
-            <div className={`border-y-[1px] font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${btn==='additional'? 'scale-90 border-0  bg-blue-100 text-primary' : 'bg-white text-secondary' } `} onClick={()=> setBtn('additional')}>
-                <FaBook />
-                <p>Additional</p>
-            </div>
+      <>
+        <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-6">
+          <div
+            className={` shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+              btn === "information"
+                ? "scale-90 border-0  bg-blue-100 text-primary"
+                : "bg-white text-secondary"
+            } `}
+            onClick={() => setBtn("information")}
+          >
+            <RiFileListFill />
+            <p style={{ fontSize: "12px" }} className="uppercase">
+              Information
+            </p>
+          </div>
+          <div
+            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+              btn === "yourplan"
+                ? "scale-90 border-0  bg-blue-100 text-primary"
+                : "bg-white text-secondary"
+            } `}
+            onClick={() => setBtn("yourplan")}
+          >
+            <BsFillMapFill />
+            <p style={{ fontSize: "12px" }} className="uppercase">
+              Tour Plan
+            </p>
+          </div>
+          <div
+            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+              btn === "location"
+                ? "scale-90 border-0  bg-blue-100 text-primary"
+                : "bg-white text-secondary"
+            } `}
+            onClick={() => setBtn("location")}
+          >
+            <ImLocation />
+            <p style={{ fontSize: "12px" }} className="uppercase">
+              Location
+            </p>
+          </div>
+          <div
+            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+              btn === "gallery"
+                ? "scale-90 border-0  bg-blue-100 text-primary"
+                : "bg-white text-secondary"
+            } `}
+            onClick={() => setBtn("gallery")}
+          >
+            <AiFillCamera />
+            <p style={{ fontSize: "12px" }} className="uppercase">
+              Gallery
+            </p>
+          </div>
+          <div
+            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+              btn === "reviews"
+                ? "scale-90 border-0  bg-blue-100 text-primary"
+                : "bg-white text-secondary"
+            } `}
+            onClick={() => setBtn("reviews")}
+          >
+            <BsPeopleFill />
+            <p style={{ fontSize: "12px" }} className="uppercase">
+              Reviews
+            </p>
+          </div>
+          <div
+            className={`shadow-2xl font-bold border-gray-400 p-5 flex flex-col justify-center items-center cursor-pointer gap-3 duration-300 ${
+              btn === "additional"
+                ? "scale-90 border-0  bg-blue-100 text-primary"
+                : "bg-white text-secondary"
+            } `}
+            onClick={() => setBtn("additional")}
+          >
+            <FaBook />
+            <p style={{ fontSize: "12px" }} className="uppercase">
+              Additional
+            </p>
+          </div>
         </div>
+      <div>
+        {/* Componenet call here  */}
+      </div>
+      </>
     );
 };
 

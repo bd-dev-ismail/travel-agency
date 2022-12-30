@@ -3,6 +3,8 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
+import SixButton from '../../Components/SixButton';
+import {signIn, signOut} from 'next-auth/react'
 
 const login = () => {
     let [show, setShow] = useState(false)
@@ -17,6 +19,7 @@ const login = () => {
 
     return (
         <div className='min-h-screen flex flex-col justify-between'>
+            <SixButton/>
             <div className='bg-blue-900 shadow-2xl'>
                 <Navbar />
             </div>
@@ -46,6 +49,7 @@ const login = () => {
                         <input className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]' type='submit' value='SUBMIT' />
                         <Link href='/user/register' className='btn border-0 btn-link text-info text-center w-full mt-0'>New Member?</Link>
                     </form>
+                    <button onClick={() => signIn()} className='btn border-0 btn-info text-center text-white rounded-full py-2 mt-10 bg-[#097ef6]'>Connect with Google</button>
                 </div>
             </div>
             <div className='bg-blue-900'>

@@ -15,23 +15,28 @@ import Slider from '../Components/Slider'
 import Stars from '../Components/Stars'
 import WhyUs from '../Components/WhyUs'
 import SixButton from '../Components/SixButton'
+<<<<<<< HEAD
 import BookNow from '../Components/BookNow'
 import Map from '../Components/Map'
+=======
+>>>>>>> origin/main
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Travel Next -The Best Travel Agency</title>
-      </Head>
+      </Head> */}
+      <div>
       <div className='absolute z-50 w-full'>
         <Navbar />
       </div>
       <div className=''>
         <MainBanner />
       </div>
+<<<<<<< HEAD
 <Map/>
        {/* six button div  */}
       <div className='my-10 max-w-4xl mx-auto'>
@@ -48,28 +53,42 @@ export default function Home() {
         <BannerSlide />
       </div>
 
+=======
+>>>>>>> origin/main
       <div>
-        <Card />
+        <SixButton/>
       </div>
+        <div className="hidden lg:block">
+          <Slider />
+        </div>
 
-      <div>
-        <LotteBanner />
+        <div className="block lg:hidden">
+          <BannerSlide />
+        </div>
+
+        <div>
+          <Card />
+        </div>
+
+        <div>
+          <LotteBanner />
+        </div>
+        <div className="my-10">
+          <Stars />
+        </div>
+        <div>
+          <About />
+        </div>
+        <div>
+          <WhyChoose />
+        </div>
+        <div>
+          <Blog />
+        </div>
+        <>
+          <Footer />
+        </>
       </div>
-      <div className="my-10">
-        <Stars />
-      </div>
-      <div>
-        <About />
-      </div>
-      <div>
-        <WhyChoose />
-      </div>
-      <div>
-        <Blog />
-      </div>
-      <>
-        <Footer />
-      </>
     </>
   );
 }
