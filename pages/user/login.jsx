@@ -47,7 +47,7 @@ const login = () => {
                         <input className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]' type='submit' value='SUBMIT' />
                         <Link href='/user/register' className='btn border-0 btn-link text-info text-center w-full mt-0'>New Member?</Link>
                     </form>
-                    <button onClick={()=>signIn()} className='btn border-0 btn-info text-center text-white rounded-full py-2 mt-10 bg-[#097ef6]'>Connect with Google</button>
+                    <button onClick={() => signIn()} className='btn border-0 btn-info text-center text-white rounded-full py-2 mt-10 bg-[#097ef6]'>Connect with Google</button>
                 </div>
             </div>
             <div className='bg-blue-900'>
