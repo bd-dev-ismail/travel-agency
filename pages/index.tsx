@@ -16,6 +16,7 @@ import Stars from '../Components/Stars'
 import WhyUs from '../Components/WhyUs'
 import SixButton from '../Components/SixButton'
 import BookNow from '../Components/BookNow'
+import Map from '../Components/Map'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,7 +32,7 @@ export default function Home() {
       <div className=''>
         <MainBanner />
       </div>
-
+<Map/>
        {/* six button div  */}
       <div className='my-10 max-w-4xl mx-auto'>
         <SixButton />
