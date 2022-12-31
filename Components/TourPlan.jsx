@@ -5,13 +5,13 @@ const TourPlan = () => {
         <div>
             {/* day-1 */}
               <div>
-                  <h3 className="text-4xl font-bold text-secondary">Day 1: Departure</h3>
-                  <p className="font-normal mt-2 text-gray-500">
+                  <h3 className="text-2xl font-bold text-secondary">Day 1: Departure</h3>
+                  <p className=" mt-2 text-gray-500">
                   Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.
                   Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.
                   Nunc tincidunt mollis felis, sed bibendum ligula auctor et. Etiam a erat sit amet augue tincidunt euismod.
                   </p>
-                  <div className="text-gray-500 mt-5 lg:pl-10 font-normal">
+                  <div className="text-gray-500 mt-5 lg:pl-10 ">
                      <li>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</li>
                      <li>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</li>
                      <li>Nunc tincidunt mollis felis, sed bibendum ligula auctor et. Etiam a erat sit amet augue tincidunt euismod.</li>
@@ -19,11 +19,11 @@ const TourPlan = () => {
               </div>
               {/* day-2 */}
               <div className="mt-10">
-                  <h3 className="text-4xl font-bold text-secondary">Day 2: Adventure Beggins</h3>
-                  <p className="font-normal mt-2 text-gray-500">
+                  <h3 className="text-2xl font-bold text-secondary">Day 2: Adventure Beggins</h3>
+                  <p className=" mt-2 text-gray-500">
                   Duis dolor est, tincidunt vel enim sit amet, venenatis euismod neque. Duis eleifend ligula id tortor finibus faucibus. Donec et quam pulvinar, blandit tortor a, sollicitudin mauris.
                   </p>
-                  <div className="text-gray-500 mt-5 lg:pl-10 font-normal">
+                  <div className="text-gray-500 mt-5 lg:pl-10 ">
                      <li>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</li>
                      <li>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</li>
                      <li>Nunc tincidunt mollis felis, sed bibendum ligula auctor et. Etiam a erat sit amet augue tincidunt euismod.</li>
@@ -32,11 +32,11 @@ const TourPlan = () => {
               </div>
               {/* day-3 */}
               <div className="mt-10">
-                  <h3 className="text-4xl font-bold text-secondary">Day 3: Historical Tour</h3>
-                  <p className="font-normal mt-2 text-gray-500">
+                  <h3 className="text-2xl font-bold text-secondary">Day 3: Historical Tour</h3>
+                  <p className=" mt-2 text-gray-500">
                   This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio
                   </p>
-                  <div className="text-gray-500 mt-5 lg:pl-10 font-normal">
+                  <div className="text-gray-500 mt-5 lg:pl-10 ">
                      <li>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</li>
                      <li>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</li>
                      <li>Nunc tincidunt mollis felis, sed bibendum ligula auctor et. Etiam a erat sit amet augue tincidunt euismod.</li>
@@ -44,11 +44,11 @@ const TourPlan = () => {
               </div>
               {/* day-4 */}
               <div className="mt-10">
-                  <h3 className="text-4xl font-bold text-secondary">Day 3: City Tour</h3>
-                  <p className="font-normal mt-2 text-gray-500">
+                  <h3 className="text-2xl font-bold text-secondary">Day 3: City Tour</h3>
+                  <p className=" mt-2 text-gray-500">
                   This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio
                   </p>
-                  <div className="text-gray-500 mt-5 lg:pl-10 font-normal">
+                  <div className="text-gray-500 mt-5 lg:pl-10 ">
                      <li>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</li>
                      <li>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</li>
                      
@@ -56,11 +56,11 @@ const TourPlan = () => {
               </div>
               {/* day-5 */}
               <div className="my-10">
-                  <h3 className="text-4xl font-bold text-secondary">Day 5: Return</h3>
-                  <p className="font-normal mt-2 text-gray-500">
+                  <h3 className="text-2xl font-bold text-secondary">Day 5: Return</h3>
+                  <p className=" mt-2 text-gray-500">
                   This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliqueenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odioed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
                   </p>
-                  <div className="text-gray-500 mt-5 lg:pl-10 font-normal">
+                  <div className="text-gray-500 mt-5 lg:pl-10 ">
                      <li>Donec ultricies, turpis a sagittis suscipit, ex odio volutpat sem, vel molestie varius est.</li>
                      <li>Suspendisse ultrices nulla eu volutpat volutpat. Proin gravida nibh vel velit auctor aliqueenean.</li>
                      

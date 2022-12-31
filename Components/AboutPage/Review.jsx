@@ -3,14 +3,14 @@ import { TiTick } from "react-icons/ti";
 import ReviewSlider from './ReviewSlider'
 const Review = () => {
     return (
-        <div className="flex items-center justify-between flex-col-reverse lg:flex-row-reverse px-16">
+        <div className="flex items-center justify-between flex-col-reverse lg:flex-row-reverse px-4 lg:px-16">
         <div className="w-full lg:w-1/2 pt-10 relative">
         <ReviewSlider />
-    <div className="flex justify-center w-full lg:w-1/2 py-2 gap-2 mx-auto absolute bottom-0 right-48">
+    {/* <div className="flex justify-center w-full lg:w-1/2 py-2 gap-2 mx-auto absolute bottom-0 right-48">
       <a href="#item1" className="btn btn-xs">1</a> 
       <a href="#item2" className="btn btn-xs">2</a> 
       <a href="#item3" className="btn btn-xs">3</a> 
-    </div>
+    </div> */}
         </div>
         <div className="w-full lg:w-1/2">
           <h1 className="text-4xl font-bold text-white ">We Provide Top Destinations Expecially <br /> For You Book Now and Enjoy!</h1>
