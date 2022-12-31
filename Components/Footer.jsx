@@ -1,5 +1,6 @@
-
-
+import logo from '../images/logo.png'
+import Link from 'next/link'
+import Image from 'next/image'
 const Footer = () => {
     return (
       <div className="bg-secondary">
@@ -13,9 +14,11 @@ const Footer = () => {
                 className="inline-flex items-center"
               >
              
-                <span className="ml-2 text-xl font-bold tracking-wide text-white uppercase">
-               Travel Next
-                </span>
+             {/* <Link
+                href="/"
+              >
+                <Image src={logo} width={110} />
+              </Link> */}
               </a>
               <div className="mt-6 lg:max-w-sm">
                 <p className="text-sm text-white">

@@ -11,22 +11,22 @@ const About = () => {
                 <div>
                   <p
                     style={{ letterSpacing: "4px" }}
-                    className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-primary uppercase "
+                    className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-200 uppercase "
                   >
                     The Best Travel Agency
                   </p>
                 </div>
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-secondary sm:text-5xl sm:leading-none">
-                  Discover The <span className="text-primary">World </span>{" "}
+                  Discover The <span className="text-gray-200">World </span>{" "}
                   <br /> With Our Guide
                 </h2>
-                <p className="text-base text-gray-800 md:text-sm">
+                <p className="text-base text-gray-200 md:text-sm">
                   You can choose any country with good tourism. Agency elementum
                   sesue the aucan vestibulum aliquam justo in sapien rutrum
                   volutpat. Donec in quis the pellentesque velit. Donec id velit
                   ac arcu posuere blane.
                 </p>
-                <p className="text-base text-gray-800 md:text-sm mt-5">
+                <p className="text-base text-gray-200 md:text-sm mt-5">
                   Hotel ut nisl quam nestibulum ac quam nec odio elementum
                   ceisue the miss varius natoque penatibus et magnis dis
                   parturient monte.
@@ -36,21 +36,21 @@ const About = () => {
                 <div>
                   <p className="flex items-center">
                     {" "}
-                    <FaCheckCircle className=" mr-2 text-primary" /> 20Years
+                    <FaCheckCircle className=" mr-2 text-gray-200" /> 20Years
                     Experience
                   </p>
                   <p className="flex items-center">
                     {" "}
-                    <FaCheckCircle className=" mr-2 text-primary" />
+                    <FaCheckCircle className=" mr-2 text-gray-200" />
                     150+ Tour Destinations
                   </p>
                 </div>
-                <p className="text-gray-800 mt-5 font-semibold">
+                <p className="text-gray-200 mt-5 font-semibold">
                   Call for Infomation
                 </p>
                 <div className="flex items-center mt-1">
-                  <FaPhoneAlt className="mr-3  text-xl text-primary" />
-                  <p className="text-xl text-primary">998 (455) 478</p>
+                  <FaPhoneAlt className="mr-3  text-xl text-gray-200" />
+                  <p className="text-xl text-gray-200">998 (455) 478</p>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Link from 'next/link'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -61,7 +61,7 @@ const Slider = () => {
     ];
   return (
     <div>
-      <div className="text-center my-10">
+      <div className="text-center py-10">
         <p className="text-sm font-bold text-primary">Destinations </p>
         <h3 className="text-3xl font-bold lg:text-4xl text-secondary">Choose Your Place</h3>
       </div>
@@ -69,13 +69,11 @@ const Slider = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3}
+        slidesPerView={3.5}
         coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
+          rotate: 30,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         loop={true}
         pagination={true}
@@ -84,7 +82,8 @@ const Slider = () => {
       >
         {bannerSiders1.map((item, idx) => (
           <SwiperSlide key={idx}>
-            <div className="lg:flex gap-6  items-center justify-center ">
+            <Link href='/tour'>
+            <div className="lg:flex gap-6 my-10 items-center justify-center ">
               <div className="relative">
                 <Image src={item.img} alt="" className="mb-3 lg:mb-0" />
                 <div
@@ -104,6 +103,7 @@ const Slider = () => {
                 </div>
               </div>
             </div>
+            </Link>
           </SwiperSlide>
         ))}
 
