@@ -49,10 +49,10 @@ export default function Home() {
         </div>
 
 
-        <div className="my-10">
+        <div className="">
           <Stars />
         </div>
-        <div>
+        <div className='bg-primary'>
           <About />
         </div>
         <div>

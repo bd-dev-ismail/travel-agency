@@ -11,13 +11,13 @@ const About = () => {
                 <div>
                   <p
                     style={{ letterSpacing: "4px" }}
-                    className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white uppercase "
+                    className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-200 uppercase "
                   >
                     The Best Travel Agency
                   </p>
                 </div>
                 <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-secondary sm:text-5xl sm:leading-none">
-                  Discover The <span className="text-white">World </span>{" "}
+                  Discover The <span className="text-gray-200">World </span>{" "}
                   <br /> With Our Guide
                 </h2>
                 <p className="text-base text-gray-200 md:text-sm">
@@ -36,12 +36,12 @@ const About = () => {
                 <div>
                   <p className="flex items-center">
                     {" "}
-                    <FaCheckCircle className=" mr-2 text-white" /> 20Years
+                    <FaCheckCircle className=" mr-2 text-gray-200" /> 20Years
                     Experience
                   </p>
                   <p className="flex items-center">
                     {" "}
-                    <FaCheckCircle className=" mr-2 text-white" />
+                    <FaCheckCircle className=" mr-2 text-gray-200" />
                     150+ Tour Destinations
                   </p>
                 </div>
@@ -49,8 +49,8 @@ const About = () => {
                   Call for Infomation
                 </p>
                 <div className="flex items-center mt-1">
-                  <FaPhoneAlt className="mr-3  text-xl text-white" />
-                  <p className="text-xl text-white">998 (455) 478</p>
+                  <FaPhoneAlt className="mr-3  text-xl text-gray-200" />
+                  <p className="text-xl text-gray-200">998 (455) 478</p>
                 </div>
               </div>
             </div>
