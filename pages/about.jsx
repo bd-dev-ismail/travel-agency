@@ -19,9 +19,9 @@ const about = () => {
             {/* Navbar end */}
 
             {/* Heading part start */}
-            <div className="bg-opacity-20 bg-black h-[300px] lg:h-[500px] flex items-center pl-10 lg:px-52">
+            <div className="bg-opacity-20 bg-black h-[300px] lg:h-[500px] flex items-center justify-center text-center">
                 <div className="">
-                    <h5 className="text-xl uppercase text-primary font-semibold">The best travel agency</h5>
+                    <h5 className="text-2xl uppercase text-primary font-semibold">The best travel agency</h5>
                     <h1 className="text-5xl font-bold uppercase text-[#fff] mt-3">We helping you find <br /> <span className="text-[#2095AE]">your dream</span> vacation</h1>
                 </div>
  

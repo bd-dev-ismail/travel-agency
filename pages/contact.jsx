@@ -1,8 +1,6 @@
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import banner1 from '../images/About-image/15.jpg'
-import animate from '../images/Contact/91188-contact-blue.json'
-import Lottie from 'lottie-react'
 import Review from "../Components/AboutPage/Review";
 import ContactFrom from '../Components/AboutPage/ContactFrom'
 

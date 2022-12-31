@@ -64,7 +64,7 @@ const destinations = () => {
                 <Navbar />
             </div>
         <h1 className='text-5xl font-bold mt-10 text-center text-primary border-b-4 border-secondary w-fit mx-auto'>All Locations</h1>
-        <div className='grid grid-cols-3 gap-10 my-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10 px-2'>
         {
             bannerSiders1.map((item, idx)=> <div key={idx}>
             <Link href={'/tour'}>
@@ -92,7 +92,7 @@ const destinations = () => {
           </div>)
         }
         </div>
-        <div className='grid grid-cols-3 gap-10 my-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10 px-2'>
         {
             bannerSiders1.map((item, idx)=> <div key={idx}>
             <Link href={'/tour'}>
