@@ -1,9 +1,9 @@
-import connectMongo from '../../../utils/dbConnect';
+import clientPromise from "../../lib/mongodb";
 import Users from '../../../models/User'
 import { hash } from 'bcryptjs';
 
 export default async function handler(req, res){
-    connectMongo().catch(error => res.json({ error: "Connection Failed...!"}))
+    clientPromise().catch(error => res.json({ error: "Connection Failed...!"}))
 
     // only post method is accepted
     if(req.method === 'POST'){
