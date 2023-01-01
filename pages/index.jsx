@@ -46,7 +46,7 @@ export default function Home() {
         <div className='scale-105'>
           <LotteBanner />
         </div>
-
+        
         <div>
           <Card />
         </div>
@@ -55,7 +55,7 @@ export default function Home() {
         <div className="">
           <Stars />
         </div>
-        <div className='bg-primary'>
+        <div className='bg-secondary my-20'>
           <About />
         </div>
         <div>

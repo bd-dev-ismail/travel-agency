@@ -19,7 +19,7 @@ const Slider = () => {
     (async () => {
       try {
         const tours = await axios.get(
-          "https://travel-agency-eta.vercel.app/api/getPosts"
+          "/api/getPosts"
         );
         const toursData = tours.data;
         setTours(toursData)

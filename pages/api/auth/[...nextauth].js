@@ -1,9 +1,10 @@
 import NextAuth from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 import CredentialsProvider from "next-auth/providers/credentials"
-import connectMongo from '../../../utils/dbConnect'
+
 import Users from '../../../models/User'
 import { compare } from 'bcryptjs';
+import clientPromise from '../../../lib/mongodb';
 
 export default NextAuth({
     providers: [
@@ -14,7 +15,9 @@ export default NextAuth({
         CredentialsProvider({
             name : "Credentials",
             async authorize(credentials, req){
-                connectMongo().catch(error => { error: "Connection Failed...!"})
+                clientPromise().catch((error) => {
+                  error: "Connection Failed...!";
+                });
 
                 // check user existance
                 const result = await Users.findOne( { email : credentials.email})

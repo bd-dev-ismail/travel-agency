@@ -4,7 +4,7 @@ import aboutUs from '../images/about.jpeg';
 const About = () => {
     return (
       <div>
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+        <div className="px-4 text-primary py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
               <div className="max-w-xl mb-6">
@@ -16,7 +16,7 @@ const About = () => {
                     The Best Travel Agency
                   </p>
                 </div>
-                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-secondary sm:text-5xl sm:leading-none">
+                <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-primary sm:text-5xl sm:leading-none">
                   Discover The <span className="text-gray-200">World </span>{" "}
                   <br /> With Our Guide
                 </h2>
@@ -32,9 +32,9 @@ const About = () => {
                   parturient monte.
                 </p>
               </div>
-              <div>
-                <div>
-                  <p className="flex items-center">
+              <div >
+                <div >
+                  <p className="flex items-center ">
                     {" "}
                     <FaCheckCircle className=" mr-2 text-gray-200" /> 20Years
                     Experience
@@ -49,8 +49,8 @@ const About = () => {
                   Call for Infomation
                 </p>
                 <div className="flex items-center mt-1">
-                  <FaPhoneAlt className="mr-3  text-xl text-gray-200" />
-                  <p className="text-xl text-gray-200">998 (455) 478</p>
+                  <FaPhoneAlt className="mr-3  text-xl text-primary" />
+                  <p className="text-xl text-primary">998 (455) 478</p>
                 </div>
               </div>
             </div>

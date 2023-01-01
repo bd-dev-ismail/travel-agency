@@ -8,7 +8,7 @@ const TourDetails = () => {
           <div
             className="hero  lg:h-[60vh] h-[55vh]"
             style={{
-              backgroundImage: `url(https://travel-agency-eta.vercel.app/_next/static/media/2.0a91fe80.jpg)`,
+              backgroundImage: `url(/_next/static/media/2.0a91fe80.jpg)`,
             }}
           >
             <div className="hero-overlay bg-opacity-30"></div>
