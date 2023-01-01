@@ -2,13 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import img1 from "../images/img1.jpg";
-import img2 from "../images/img2.jpg"; 
-import img3 from "../images/img3.jpg";
-import img4 from "../images/italy.jpg";
-import img5 from "../images/scotLand.jpg";
-import img6 from "../images/solvenia.jpg";
-import Image from "next/image";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
@@ -35,9 +28,9 @@ const BannerSlide = () => {
       <div>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           <SwiperSlide>
-            <div className="lg:flex gap-6  items-center justify-center ">
+            <div className="lg:flex gap-6  items-center justify-center">
               {tours.map((tour, idx) => (
-                <div className="relative" key={idx}>
+                <div className="relative my-5 lg:my-0" key={idx}>
                   {/* <Image src={tour.image} alt="" className="mb-3 lg:mb-0" /> */}
                   <img src={tour.image} alt="" />
                   <div
