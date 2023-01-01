@@ -90,7 +90,7 @@ const  handleGoogleSignin = async ()=>{
                                     <Loading />
                                 </div>
                                 :
-                        <input className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]' type='submit' value='SUBMIT' />
+                        <input className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]' type='submit' value='LOGIN' />
                         }
                         <Link href='/user/register' className='btn border-0 btn-link text-info text-center w-full mt-0'>New Member?</Link>
                     </form>
