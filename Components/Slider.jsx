@@ -8,11 +8,13 @@ import { EffectCoverflow, Pagination } from "swiper";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import SingleDestinationCard from './SingleDestinationCard'
+import Loading from "./Loading";
 
 const Slider = () => {
   const [tours, setTours] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  
   useEffect(() => {
     (async () => {
       try {
@@ -21,42 +23,48 @@ const Slider = () => {
         );
         const toursData = tours.data;
         setTours(toursData)
+        console.log(toursData)
       } catch (e) {
       } finally {
         setIsLoading(false)
       }
     })();
   }, [])
+
+
   return (
-    <div>
-      <div className="text-center py-10">
-        <p className="text-sm font-bold text-primary">Destinations </p>
+    <div >
+      <div className="text-center pt-10">
+        <p className="text-2xl font-bold text-primary">Destinations </p>
         <h3 className="text-3xl font-bold lg:text-4xl text-secondary">Choose Your Place</h3>
       </div>
+      { isLoading ? 
+        <div className="max-w-sm mx-auto opacity-50">
+      <Loading />
+    </div> :
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3.5}
         coverflowEffect={{
-          rotate: 30,
+          rotate: 20,
           modifier: 1,
           slideShadows: false,
         }}
         loop={true}
-        pagination={true}
+        // pagination={true}
         modules={[EffectCoverflow]}
         className="mySwiper"
       >
         {tours.map((tour, idx) => (
           <SwiperSlide key={idx}>
-            <Link href='/tour'>
-            <div className="lg:flex gap-6 my-10 items-center justify-center ">
+            <Link href={`/tour/${tour?._id}`}>
+            {/* <div className="lg:flex gap-6 my-5 items-center justify-center " onMouseEnter={()=>setHoverEffect(true)} onMouseLeave={()=>setHoverEffect(false)}>
               <div className="relative">
                 <img src={tour.image} alt="" className="mb-3 lg:mb-0" />
                 <div
-                  className="flex absolute bottom-0 w-full justify-between img-card px-4 py-5 bg-black text-white"
-                  style={{ backgroundColor: "rgba(0,0,0,.5)" }}
+                  className={`flex absolute bottom-0 w-full justify-between img-card px-4 py-5 bg-black text-white ${HoverEffect ? 'bg-[#d6773780]' : 'bg-[rgba(0,0,0,.5)]'}`}
                 >
                   <div>
                     <p className="text-xl font-bold italic uppercase">
@@ -70,11 +78,13 @@ const Slider = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <SingleDestinationCard tour={tour}/>
             </Link>
           </SwiperSlide>
         ))}
       </Swiper>
+      }
     </div>
   );
 };

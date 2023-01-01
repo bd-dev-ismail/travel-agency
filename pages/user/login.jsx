@@ -7,16 +7,22 @@ import SixButton from '../../Components/SixButton';
 import {signIn, signOut} from 'next-auth/react'
 import * as loginImage from '../../images/lotte/tourist-enjoying-the-walk.json'
 import Head from 'next/head';
+import Loading from '../../Components/Loading'
 const login = () => {
     let [show, setShow] = useState(false)
     let [err, setErr] = useState('')
-
+    let [isLoading, setIsLoading] = useState(false)
     let handlerForm = e => {
         e.preventDefault();
         let password = e.target.password.value
+        setIsLoading(true)
+        // after loging in successfully
+        setIsLoading(false)
     }
-
-
+ 
+const  handleGoogleSignin = async ()=>{
+    signIn('google', { callbackUrl : "http://localhost:3000"})
+}
 
     return (
         <div className='min-h-screen flex flex-col justify-between'>
@@ -50,10 +56,18 @@ const login = () => {
                         {
                             err && <p className='text-center font-bold text-sm text-error'>{err}</p>
                         }
+
+                        {
+                            isLoading ? 
+                                <div className="w-[100px] mx-auto opacity-70">
+                                    <Loading />
+                                </div>
+                                :
                         <input className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]' type='submit' value='SUBMIT' />
+                        }
                         <Link href='/user/register' className='btn border-0 btn-link text-info text-center w-full mt-0'>New Member?</Link>
                     </form>
-                    {/* <button onClick={() => signIn()} className='btn border-0 btn-info text-center text-white rounded-full py-2 mt-10 bg-[#097ef6]'>Connect with Google</button> */}
+                    <button onClick={handleGoogleSignin} className='btn border-0 btn-info text-center text-white rounded-full py-2 mt-10 bg-[#097ef6]'>Connect with Google</button>
                 </div>
             </div>
             <div className='bg-blue-900'>

@@ -1,12 +1,15 @@
 import Head from "next/dist/shared/lib/head";
-import BookNow from "../Components/BookNow";
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
-import SixButton from "../Components/SixButton";
-import TourDetails from "../Components/TourDetails";
-
+import BookNow from "../../Components/BookNow";
+import Footer from "../../Components/Footer";
+import Navbar from "../../Components/Navbar";
+import SixButton from "../../Components/SixButton";
+import TourDetails from "../../Components/TourDetails";
+import {useRouter} from 'next/router'
 
 const tourr = () => {
+    let route = useRouter()
+    let {id} = route.query
+    console.log(id);
     return (
       <div>
       <Head>
