@@ -5,11 +5,12 @@ import Navbar from '../Components/Navbar';
 
 const blog = () => {
     return (
-        <div>
+      <div className="bg-[url('https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-fixed bg-cover">
            <Head>
-            <title>Blog - Travel Next -The Best Travel Agency</title>
+            <title>Blogs - Travel Next -The Best Travel Agency</title>
            </Head> 
-           <div className='bg-blue-900'>
+           <div className='backdrop-blur-sm'>
+           <div className='bg-gray-800 bg-opacity-10'>
                 <Navbar />
             </div>
            <div className="text-black">
@@ -330,6 +331,7 @@ const blog = () => {
         </div>
       </div>
       <Footer />
+           </div>
         </div>
     );
 };

@@ -42,13 +42,13 @@ const Navbar = () => {
                     <Link href="/destinations">Destinations</Link>
                   </li>
                   <li className="hover:text-[#2095AE]">
-                    <Link href="/blog">Blog</Link>
-                  </li>
-                  <li className="hover:text-[#2095AE]">
                     <Link href="/about">About</Link>
                   </li>
                   <li className="hover:text-[#2095AE]">
                     <Link href="/contact">Contact</Link>
+                  </li>
+                  <li className="hover:text-[#2095AE]">
+                    <Link href="/blog">Blog</Link>
                   </li>
                 </ul>
               </div>
@@ -69,13 +69,13 @@ const Navbar = () => {
                   <Link href="/destinations">Destinations</Link>
                 </li>
                 <li className="text-white">
-                  <Link href="/blog">Blog</Link>
-                </li>
-                <li className="text-white">
                   <Link href="/about">About</Link>
                 </li>
                 <li className="text-white">
                   <Link href="/contact">Contact</Link>
+                </li>
+                <li className="text-white">
+                  <Link href="/blog">Blog</Link>
                 </li>
               </ul>
             </div>

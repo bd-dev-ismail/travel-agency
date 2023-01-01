@@ -14,11 +14,12 @@ const Footer = () => {
                 className="inline-flex items-center"
               >
              
-             {/* <Link
+             <Link
                 href="/"
+                className="cursor-pointer normal-case text-white text-xl"
               >
-                <Image src={logo} width={110} />
-              </Link> */}
+                <Image src={logo}  width={110} />
+              </Link>
               </a>
               <div className="mt-6 lg:max-w-sm">
                 <p className="text-sm text-white">
