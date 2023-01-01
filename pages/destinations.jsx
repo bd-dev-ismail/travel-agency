@@ -18,32 +18,31 @@ const destinations = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    (async () => {
-      try {
-        const tours = await axios.get(
-          "http://localhost:3000/api/getPosts"
-        );
-        const toursData = tours.data;
+    let func = async () => {
+        const res = await fetch("/api/getPosts");
+        const toursData = await res.json();
         setTours(toursData)
         console.log(toursData)
-      } catch (e) {
-      } finally {
         setIsLoading(false)
-      }
-    })();
+    };
+
+    return ()=>{
+      func()
+    }
   }, [])
 
 
 
   return (
-    <>
+    <div className="bg-[url('https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-fixed bg-cover">
       <Head>
-        <title>About - Travel Next -The Best Travel Agency</title>
+        <title>Destinations - Travel Next -The Best Travel Agency</title>
       </Head>
-      <div className='bg-blue-900 shadow-2xl'>
+      <div className='backdrop-blur-sm'>
+      <div className=''>
         <Navbar />
       </div>
-      <h1 className='text-5xl font-bold mt-10 text-center text-primary border-b-4 border-secondary w-fit mx-auto'>All Locations</h1>
+      <h1 className='text-5xl font-bold mt-10 text-center text-secondary border-secondary w-fit mx-auto'>All Locations</h1>
       {isLoading ?
         <div className="max-w-sm mx-auto opacity-50 py-20">
           <Loading />
@@ -70,7 +69,8 @@ const destinations = () => {
         </>
       }
       <Footer />
-    </>
+      </div>
+    </div>
   );
 };
 

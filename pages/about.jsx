@@ -9,7 +9,7 @@ import Head from "next/head";
 const about = () => {
 
     return (
-        <div style={{background: `url(${banner1.src})`,backgroundAttachment:'fixed', backgroundPosition:'center', backgroundRepeat:'no-repeat'}}>
+        <div className="" style={{background: `url('https://images.pexels.com/photos/463734/pexels-photo-463734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,backgroundAttachment:'fixed',backgroundSize: 'cover', backgroundPosition:'center', backgroundRepeat:'no-repeat'}}>
             <Head>
         <title>About Us - Travel Next -The Best Travel Agency</title>
       </Head>
