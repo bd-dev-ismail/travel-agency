@@ -4,7 +4,7 @@ import CredentialsProvider from "next-auth/providers/credentials"
 
 import Users from '../../../model/Schema'
 import { compare } from 'bcryptjs';
-import connectMongo from '../../../lib/mongose';
+import clientPromise from '../../../lib/mongodb';
 
 export default NextAuth({
     providers: [
@@ -15,7 +15,7 @@ export default NextAuth({
         CredentialsProvider({
             name : "Credentials",
             async authorize(credentials, req){
-                connectMongo.catch((error) => {
+                clientPromise.catch((error) => {
                   error: "Connection Failed...!";
                 });
 
