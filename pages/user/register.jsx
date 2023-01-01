@@ -17,20 +17,18 @@ const register = () => {
         let email = e.target.email.value
         let password = e.target.password.value
         let confirm = e.target.confirm.value
-        let cpassword;
+        
 
         if (password !== confirm) {
             setErr('Password and Confirm does not match')
             
             return;
         }
-        else{
-            cpassword=password
-        }
+        
         setErr('')
         const userInfo = {
             email,
-            cpassword,
+            password,
 
         }
         
