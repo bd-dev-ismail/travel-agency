@@ -18,6 +18,7 @@ import SixButton from '../Components/SixButton'
 import { FaSearchLocation } from 'react-icons/fa'
 import FindNow from '../Components/FindNow'
 import { getSession, useSession, signOut } from "next-auth/react"
+import FormDate from '../Components/FormDate'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -50,7 +51,7 @@ export default function Home() {
         <div>
           <Card />
         </div>
-
+   
 
         <div className="">
           <Stars />
