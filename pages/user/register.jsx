@@ -7,18 +7,19 @@ import Navbar from '../../Components/Navbar';
 import { useRouter } from 'next/router';
 import * as loginImage from '../../images/lotte/tourist-enjoying-the-walk.json'
 import { toast } from 'react-hot-toast';
+import Loading from '../../Components/Loading';
 const register = () => {
 
     let [show, setShow] = useState(false)
     let [err, setErr] = useState('')
     const router = useRouter()
-
+    let [isLoading, setIsLoading] = useState(false)
     let handlerForm = async e => {
         e.preventDefault();
         let email = e.target.email.value
         let password = e.target.password.value
         let confirm = e.target.confirm.value
-        
+        setIsLoading(true)
 
         if (password !== confirm) {
             setErr('Password and Confirm does not match')
@@ -45,9 +46,11 @@ const register = () => {
                 if(data.status) {
                     router.push('/')
                     toast.success('Successfully registered')
+                    setIsLoading(false)
                 }
                 else{
                     toast.error('Register failed')
+                    setIsLoading(false)
                 }
             })
     }
@@ -94,7 +97,14 @@ const register = () => {
                         {
                             err && <p className='text-center font-bold text-sm text-error'>{err}</p>
                         }
-                        <button className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]'>Register</button>
+                        {
+                            isLoading ? 
+                                <div className="w-[100px] mx-auto opacity-70">
+                                    <Loading />
+                                </div>
+                                :
+                            <input className='btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-[#097ef6]' type='submit' value='REGISTER' />
+                        }
                         <Link href='/user/login' className='btn border-0 btn-link text-info text-center w-full mt-0'>Already a Member?</Link>
                     </form>
                 </div>
