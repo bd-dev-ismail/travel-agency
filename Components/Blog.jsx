@@ -93,7 +93,7 @@ const Blog = () => {
                       />
                     </div>
                     <small>
-                      <span className="font-bold">Jhon Abraham</span> <br />
+                      <span className="font-bold">Md. Shakibur Rahman</span> <br />
                     
                     </small>
                   </div>
