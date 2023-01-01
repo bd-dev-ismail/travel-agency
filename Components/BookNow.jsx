@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import FormDate from '../Components/FormDate';
 import BookingModal from '../Components/BookingModal';
 import { format } from 'date-fns';
@@ -13,7 +13,9 @@ const BookNow = () => {
     //format date
       const [error, setError] = useState('');
    const date = format(startDate,'PP');
-     
+    useEffect(()=> {
+        setBook(true);
+    },[startDate])
     const handlerForm = async (e) => {
         e.preventDefault();
         const name = e.currentTarget.name.value;
@@ -28,9 +30,22 @@ const BookNow = () => {
             phone,
             location,
             slot,
-            date
+            date,
+            price: 500,
         }
        setBooking(bookingData);
+         fetch("https://genius-car-server-gamma.vercel.app/v2/orders", {
+           method: "POST",
+           headers: {
+             "content-type": "application/json",
+           },
+           body: JSON.stringify(bookingData),
+         })
+           .then((res) => res.json())
+           .then((data) => {
+             window.location.replace(data.url);
+           })
+           .catch((err) => console.log(err));
     }
     let handlerCheck = () => {
         setBook(false)
@@ -154,7 +169,7 @@ const BookNow = () => {
             </button>
 
             <label
-              htmlFor="my-modal-3"
+            
               className="btn border-0 btn-info text-center text-white rounded-full w-full py-2 bg-secondary"
               type="submit"
               disabled={book ? true : false}
@@ -163,7 +178,7 @@ const BookNow = () => {
             </label>
           </form>
         </div>
-        <BookingModal booking={booking} />
+       
       </div>
     );
 };
