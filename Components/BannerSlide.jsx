@@ -13,7 +13,7 @@ const BannerSlide = () => {
     (async () => {
       try {
         const tours = await axios.get(
-          "http://localhost:3000/api/getPosts"
+          "https://travel-agency-eta.vercel.app/api/getPosts"
         );
         const toursData = tours.data;
         setTours(toursData)

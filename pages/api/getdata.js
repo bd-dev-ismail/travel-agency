@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
 
-// http://localhost:3000/api/getdata?slug=data
+// https://travel-agency-eta.vercel.app/api/getdata?slug=data
 export default function handler(req, res) {
 
   fs.readFile(`data/${req.query.slug}.json`, "utf-8", (err, data) => {
