@@ -1,16 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import animate from '../../images/Contact/91188-contact-blue.json'
 import Lottie from 'lottie-react'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-hot-toast';
+import Loading from '../Loading';
 
 
 const ContactFrom = () => {
     const form = useRef();
+    let [isLoading, setIsLoading] = useState(false)
 
     const handleEmailSend = (event) => {
         event.preventDefault();
-
+        setIsLoading(true)
         emailjs.sendForm(
             'service_ltuwoka',
             'template_h8zvr1s',
@@ -22,12 +24,15 @@ const ContactFrom = () => {
                 console.log(result.text);
                 toast.success('submitted successfully')
                 event.target.reset()
+                setIsLoading(false)
             }, (error) => {
                 toast.error(error.text)
                 event.target.reset()
+                setIsLoading(false)
             });
 
     }
+
     return (
         <div>
             <div className="backdrop-blur-sm">
@@ -46,8 +51,14 @@ const ContactFrom = () => {
                             <br />
                             <textarea required className="textarea mb-8 p-6 bg-primary text-secondary font-bold border-y-4 border-secondary focus:outline-0 input-bordered w-full placeholder:text-gray-300" placeholder="Type Your Message"></textarea>
                             <br />
-
+                            {
+                                isLoading ? 
+                                <div className="w-[150px] mx-auto">
+                                    <Loading />
+                                </div>
+                                :
                             <input type={'submit'} className="btn btn-secondary mb-7 w-full" value={'Send Message'} />
+                            }
                         </form>
                     </div>
                 </div>

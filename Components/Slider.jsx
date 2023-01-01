@@ -9,6 +9,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import SingleDestinationCard from './SingleDestinationCard'
+import Loading from "./Loading";
 
 const Slider = () => {
   const [tours, setTours] = useState([]);
@@ -30,9 +31,6 @@ const Slider = () => {
     })();
   }, [])
 
-  if(isLoading){
-    return <p>Loading...</p>
-  }
 
   return (
     <div >
@@ -40,6 +38,10 @@ const Slider = () => {
         <p className="text-2xl font-bold text-primary">Destinations </p>
         <h3 className="text-3xl font-bold lg:text-4xl text-secondary">Choose Your Place</h3>
       </div>
+      { isLoading ? 
+        <div className="max-w-sm mx-auto opacity-50">
+      <Loading />
+    </div> :
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -82,6 +84,7 @@ const Slider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+      }
     </div>
   );
 };
