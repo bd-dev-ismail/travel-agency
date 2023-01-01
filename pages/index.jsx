@@ -17,10 +17,13 @@ import WhyUs from '../Components/WhyUs'
 import SixButton from '../Components/SixButton'
 import { FaSearchLocation } from 'react-icons/fa'
 import FindNow from '../Components/FindNow'
+import { getSession, useSession, signOut } from "next-auth/react"
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { data: session } = useSession()
+  console.log(session)
   return (
     <>
       <Head>

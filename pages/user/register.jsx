@@ -4,22 +4,47 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
+import { useRouter } from 'next/router';
 import * as loginImage from '../../images/lotte/tourist-enjoying-the-walk.json'
 const register = () => {
 
     let [show, setShow] = useState(false)
     let [err, setErr] = useState('')
+    const router = useRouter()
 
-    let handlerForm = e => {
+    let handlerForm = async e => {
         e.preventDefault();
+        let email = e.target.email.value
         let password = e.target.password.value
         let confirm = e.target.confirm.value
+        let cpassword;
 
         if (password !== confirm) {
             setErr('Password and Confirm does not match')
+            
             return;
         }
+        else{
+            cpassword=password
+        }
         setErr('')
+        const userInfo = {
+            email,
+            cpassword,
+
+        }
+        
+        const options = {
+            method: "POST",
+            headers : { 'Content-Type': 'application/json'},
+            body: JSON.stringify(userInfo)
+        }
+
+        await fetch('http://localhost:3000/api/auth/singup', options)
+            .then(res => res.json())
+            .then((data) => {
+                if(data) router.push('http://localhost:3000')
+            })
     }
 
 
