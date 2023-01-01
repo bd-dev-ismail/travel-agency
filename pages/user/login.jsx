@@ -37,10 +37,12 @@ const login = () => {
             router.push(status.url)
             setIsLoading(false)
             toast.success('Successfully logged in')
+
         } else {
             setIsLoading(false)
             toast.error('Logging in failed')
         }
+        console.log(status)
     }
 
     // {"name":"alamin","email":"fpalamin6@gmail.com","password":"123456"}
