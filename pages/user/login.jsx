@@ -8,20 +8,22 @@ import {signIn, signOut} from 'next-auth/react'
 import * as loginImage from '../../images/lotte/tourist-enjoying-the-walk.json'
 import Head from 'next/head';
 import { useRouter } from 'next/router';
-
+import Loading from '../../Components/Loading'
+import { toast } from 'react-hot-toast';
 
 
 const login = () => {
     let [show, setShow] = useState(false)
     let [err, setErr] = useState('')
     const router = useRouter()
-
+    let [isLoading, setIsLoading] = useState(false)
     
 
     
 
     let handlerForm = async e => {
         e.preventDefault();
+        setIsLoading(true)
         let email = e.target.email.value
         let password = e.target.password.value
         const status = await signIn('credentials', {
@@ -31,7 +33,14 @@ const login = () => {
             callbackUrl: "/"
         })
 
-        if(status.ok) router.push(status.url)
+        if(status.ok) {
+            router.push(status.url)
+            setIsLoading(false)
+            toast.success('Successfully logged in')
+        } else {
+            setIsLoading(false)
+            toast.error('Logging in failed')
+        }
     }
 
     // {"name":"alamin","email":"fpalamin6@gmail.com","password":"123456"}
