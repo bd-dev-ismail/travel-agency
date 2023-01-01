@@ -18,19 +18,17 @@ const destinations = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    (async () => {
-      try {
-        const tours = await axios.get(
-          "http://localhost:3000/api/getPosts"
-        );
-        const toursData = tours.data;
+    let func = async () => {
+        const res = await fetch("/api/getPosts");
+        const toursData = await res.json();
         setTours(toursData)
         console.log(toursData)
-      } catch (e) {
-      } finally {
         setIsLoading(false)
-      }
-    })();
+    };
+
+    return ()=>{
+      func()
+    }
   }, [])
 
 
