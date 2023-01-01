@@ -6,6 +6,7 @@ import Footer from '../../Components/Footer';
 import Navbar from '../../Components/Navbar';
 import { useRouter } from 'next/router';
 import * as loginImage from '../../images/lotte/tourist-enjoying-the-walk.json'
+import { toast } from 'react-hot-toast';
 const register = () => {
 
     let [show, setShow] = useState(false)
@@ -38,10 +39,16 @@ const register = () => {
             body: JSON.stringify(userInfo)
         }
 
-        await fetch('http://localhost:3000/api/auth/singup', options)
+        await fetch('/api/auth/singup', options)
             .then(res => res.json())
             .then((data) => {
-                if(data) router.push('http://localhost:3000')
+                if(data.status) {
+                    router.push('/')
+                    toast.success('Successfully registered')
+                }
+                else{
+                    toast.error('Register failed')
+                }
             })
     }
 
