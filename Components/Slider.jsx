@@ -65,7 +65,7 @@ const Slider = () => {
                     <h3 className="text-3xl font-bold">{tour.name}</h3>
                   </div>
                   <div>
-                    <p className="text-xl font-bold italic">{tour.days}-Days</p>
+                    <p className="text-xl font-bold italic">{tour.day}-Days</p>
                     <h3 className="text-3xl font-bold">${tour.price}</h3>
                   </div>
                 </div>
