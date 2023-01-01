@@ -1,5 +1,5 @@
-import clientPromise from "../../../lib/mongodb";
-import Users from '../../../models/User'
+import connectMongo from "../../../lib/mongose";
+import Users from '../../../model/Schema'
 import { hash } from 'bcryptjs';
 
 export default async function handler(req, res){
