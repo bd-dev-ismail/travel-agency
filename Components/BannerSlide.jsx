@@ -33,6 +33,7 @@ const BannerSlide = () => {
               {tours.map((tour, idx) => (
                 <div className="relative" key={idx}>
                   {/* <Image src={tour.image} alt="" className="mb-3 lg:mb-0" /> */}
+                  <img src={tour.image} alt="" />
                   <div
                     className="flex absolute bottom-0 w-full justify-between img-card px-4 py-5 bg-black text-white"
                     style={{ backgroundColor: "rgba(0,0,0,.5)" }}
