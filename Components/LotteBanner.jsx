@@ -4,7 +4,7 @@ import animate from "../images/lotte/nature-visite-travel.json";
 const LotteBanner = () => {
     return (
       <div>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 my-20 gap-14">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 mt-20 mb-5 gap-14">
           <div className="">
             <div className="">
               <Lottie animationData={animate} />
@@ -12,11 +12,11 @@ const LotteBanner = () => {
           </div>
 
           <div className="flex flex-col justify-center gap-5 text-black">
-            <h1 className="text-3xl text-center font-bold">
+            <h1 className="text-3xl text-center text-secondary font-bold">
               “A journey of a thousand miles, <br /> Begins with a single step”
             </h1>
-            <h1 className="text-3xl text-right">-- Lao Tzu </h1>
-            <p className="text-2xl text-justify">
+            <h1 className="text-3xl text-right text-primary">-- Lao Tzu </h1>
+            <p className="text-2xl text-justify text-gray-500">
               <span className="font-semibold">Next Travel</span> is a platform
               for tourists to travel around the country, to book tickets for
               different places, and to have a safe journey at any time.{" "}

@@ -23,21 +23,23 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      {/* <Head>
-        <title>Travel Next -The Best Travel Agency</title>
-      </Head> */}
+      <Head>
+        <title>Home - Travel Next -The Best Travel Agency</title>
+      </Head>
       <div>
-      <div className='absolute z-50 w-full'>
-        <Navbar />
-      </div>
-      <div className=''>
-        <MainBanner />
+        <div className='absolute z-50 w-full'>
+          <Navbar />
+        </div>
+        <div className=''>
+          <MainBanner />
           <FindNow />
-      </div>
+        </div>
         <div className="hidden lg:block">
           <Slider />
         </div>
-
+        <div className='scale-105'>
+          <LotteBanner />
+        </div>
         <div className="block lg:hidden">
           <BannerSlide />
         </div>
@@ -46,9 +48,7 @@ export default function Home() {
           <Card />
         </div>
 
-        <div>
-          <LotteBanner />
-        </div>
+
         <div className="my-10">
           <Stars />
         </div>
@@ -58,6 +58,8 @@ export default function Home() {
         <div>
           <WhyChoose />
         </div>
+
+        
         <div>
           <Blog />
         </div>

@@ -1,3 +1,4 @@
+import Head from "next/dist/shared/lib/head";
 import BookNow from "../Components/BookNow";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
@@ -8,6 +9,9 @@ import TourDetails from "../Components/TourDetails";
 const tourr = () => {
     return (
       <div>
+      <Head>
+        <title>Booking - Travel Next -The Best Travel Agency</title>
+      </Head>
         <div>
           <div className="absolute z-50 w-full">
             <Navbar />
