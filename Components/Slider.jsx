@@ -10,11 +10,11 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import SingleDestinationCard from './SingleDestinationCard'
 import Loading from "./Loading";
-
+import { getSession, useSession, signOut } from "next-auth/react";
 const Slider = () => {
   const [tours, setTours] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  
+   const { data: session } = useSession();
   useEffect(() => {
     (async () => {
       try {
@@ -90,3 +90,19 @@ const Slider = () => {
 };
 
 export default Slider;
+export async function getServerSideProps({ req }){
+  const session = await getSession({ req })
+
+  if(!session){
+      return {
+          redirect : {
+              destination : "user/login",
+              premanent: false
+          }
+      }
+  }
+  // authorize user return session
+  return {
+      props: { session }
+  }
+}
