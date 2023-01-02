@@ -44,7 +44,7 @@ const MainBanner = () => {
                       WebkitTextStroke: "1px #fff",
                     }}
                   >
-                    Travol
+                    Travel Next
                   </span>
                 </h1>
               </div>
@@ -79,7 +79,7 @@ const MainBanner = () => {
                       WebkitTextStroke: "1px #fff",
                     }}
                   >
-                    Travol
+                    Travel Next
                   </span>
                 </h1>
               </div>
