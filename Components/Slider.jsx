@@ -11,7 +11,7 @@ import axios from "axios";
 import SingleDestinationCard from './SingleDestinationCard'
 import { getSession, useSession, signOut } from "next-auth/react"
 import Loading from "./Loading";
-import { getSession, useSession, signOut } from "next-auth/react";
+
 const Slider = () => {
   const [tours, setTours] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
