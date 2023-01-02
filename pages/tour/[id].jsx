@@ -4,9 +4,11 @@ import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
 import SixButton from "../../Components/SixButton";
 import TourDetails from "../../Components/TourDetails";
+// import { getSession, useSession, signOut } from "next-auth/react"
 import {useRouter} from 'next/router'
 
 const tourr = () => {
+  // const { data: session } = useSession()
     let route = useRouter()
     let {id} = route.query
     console.log(id);
@@ -41,3 +43,20 @@ const tourr = () => {
 };
 
 export default tourr;
+
+// export async function getServerSideProps({ req }){
+//   const session = await getSession({ req })
+
+//   if(!session){
+//       return {
+//           redirect : {
+//               destination : "../user/login",
+//               premanent: false
+//           }
+//       }
+//   }
+//   // authorize user return session
+//   return {
+//       props: { session }
+//   }
+// }

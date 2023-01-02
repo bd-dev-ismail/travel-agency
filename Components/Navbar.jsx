@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { RxPerson } from 'react-icons/rx'
 import logo from '../images/logo.png'
+import { getSession, useSession, signOut } from "next-auth/react"
 const Navbar = () => {
+  const handleSingOut = () => {
+    signOut()
+  }
+  const { data: session } = useSession()
+
   return (
     <div>
       <div>
@@ -50,13 +56,16 @@ const Navbar = () => {
                   <li className="hover:text-[#2095AE]">
                     <Link href="/blog">Blog</Link>
                   </li>
+                  {/* <li className="hover:text-[#2095AE]">
+                    <button className="btn btn-primary" onClick={handleSingOut}>Sing Out</button>
+                  </li> */}
                 </ul>
               </div>
               <Link
                 href="/"
                 className="cursor-pointer normal-case text-white text-xl"
               >
-                <Image src={logo}  width={110} />
+                <Image src={logo} width={110} />
               </Link>
             </div>
             <div className="navbar-center hidden lg:flex text-black font-semibold navbar-end">
@@ -77,12 +86,24 @@ const Navbar = () => {
                 <li className="text-white">
                   <Link href="/blog">Blog</Link>
                 </li>
+
               </ul>
             </div>
+            {/*  profile section */}
             <div className="navbar-end text-white">
-              <Link href='/user/login'>
-                <RxPerson className="font-bold" />
-              </Link>
+              {session ? <div className="dropdown dropdown-hover">
+                <label tabIndex={0} className=""><RxPerson className="font-bold" /></label>
+                <ul tabIndex={0} className="dropdown-content menu p-2 shadow text-secondary rounded-box w-52 ">
+
+                  <li><a>My Tour</a></li>
+                  <li><a>Profile</a></li>
+                  <li><button className="btn btn-primary" onClick={handleSingOut}>Sing Out</button></li>
+                </ul>
+              </div> :
+                <Link href='/user/login'>
+                  <RxPerson className="font-bold" />
+                </Link>
+              }
             </div>
           </div>
         </div>

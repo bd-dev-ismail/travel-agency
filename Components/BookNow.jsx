@@ -33,7 +33,7 @@ const BookNow = () => {
             date,
             price: 500,
         }
-       
+       console.log(bookingData);
          fetch("https://genius-car-server-gamma.vercel.app/v2/orders", {
            method: "POST",
            headers: {
@@ -44,6 +44,7 @@ const BookNow = () => {
            .then((res) => res.json())
            .then((data) => {
              window.location.replace(data.url);
+             console.log('working')
            })
            .catch((err) => console.log(err));
     }
@@ -169,13 +170,13 @@ const BookNow = () => {
               Check Availability
             </button>
 
-            <label
+            <button
               className="btn border-0 btn-info text-center text-white rounded-full w-full py-2 bg-secondary"
               type="submit"
               disabled={book ? true : false}
             >
-              Book Now
-            </label>
+            Confrim Booking
+            </button>
           </form>
         </div>
       </div>
