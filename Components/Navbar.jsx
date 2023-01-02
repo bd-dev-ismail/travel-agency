@@ -91,9 +91,9 @@ const Navbar = () => {
             </div>
             {/*  profile section */}
             <div className="navbar-end text-white">
-              {session ? <div className="dropdown dropdown-hover">
+              {session ? <div className="dropdown dropdown-hover dropdown-left">
                 <label tabIndex={0} className=""><RxPerson className="font-bold" /></label>
-                <ul tabIndex={0} className="dropdown-content menu p-2 shadow text-secondary rounded-box w-52 ">
+                <ul tabIndex={0} className="dropdown-content  menu p-2 shadow text-secondary rounded-box w-52 bg-white">
 
                   <li><a>My Tour</a></li>
                   <li><a>Profile</a></li>
