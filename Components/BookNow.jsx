@@ -13,9 +13,9 @@ const BookNow = () => {
     //format date
       const [error, setError] = useState('');
    const date = format(startDate,'PP');
-    useEffect(()=> {
-        setBook(true);
-    },[startDate])
+    // useEffect(()=> {
+    //     setBook(true);
+    // },[startDate])
     const handlerForm = async (e) => {
         e.preventDefault();
         const name = e.currentTarget.name.value;
