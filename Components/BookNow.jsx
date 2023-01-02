@@ -9,7 +9,7 @@ const BookNow = () => {
     const [startDate, setStartDate] =  useState(new Date());
     let [err, setErr] = useState('')
     let [book, setBook] = useState(true);
-    const [booking, setBooking] = useState({});
+    // const [booking, setBooking] = useState({});
     //format date
       const [error, setError] = useState('');
    const date = format(startDate,'PP');
@@ -33,7 +33,7 @@ const BookNow = () => {
             date,
             price: 500,
         }
-       setBooking(bookingData);
+       
          fetch("https://genius-car-server-gamma.vercel.app/v2/orders", {
            method: "POST",
            headers: {
