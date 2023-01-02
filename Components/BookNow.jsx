@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from "react";
 import FormDate from '../Components/FormDate';
-import BookingModal from '../Components/BookingModal';
+
 import { format } from 'date-fns';
 import "react-datepicker/dist/react-datepicker.css";
-import sslCommerz from 'sslcommerz-lts';
+
 const BookNow = () => {
     const [startDate, setStartDate] =  useState(new Date());
     let [err, setErr] = useState('')
@@ -13,9 +13,9 @@ const BookNow = () => {
     //format date
       const [error, setError] = useState('');
    const date = format(startDate,'PP');
-    // useEffect(()=> {
-    //     setBook(true);
-    // },[startDate])
+    useEffect(()=> {
+        setBook(true);
+    },[startDate])
     const handlerForm = async (e) => {
         e.preventDefault();
         const name = e.currentTarget.name.value;
@@ -164,12 +164,12 @@ const BookNow = () => {
             <button
               className="btn border-0 btn-info text-center text-white rounded-full w-full py-2 mt-10 bg-primary"
               onClick={handlerCheck}
+              disabled={!book ? true : false}
             >
               Check Availability
             </button>
 
             <label
-            
               className="btn border-0 btn-info text-center text-white rounded-full w-full py-2 bg-secondary"
               type="submit"
               disabled={book ? true : false}
@@ -178,7 +178,6 @@ const BookNow = () => {
             </label>
           </form>
         </div>
-       
       </div>
     );
 };
