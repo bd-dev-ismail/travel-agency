@@ -9,11 +9,13 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import SingleDestinationCard from './SingleDestinationCard'
+import { getSession, useSession, signOut } from "next-auth/react"
 import Loading from "./Loading";
 
 const Slider = () => {
   const [tours, setTours] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const { data: session } = useSession()
   
   useEffect(() => {
     (async () => {
@@ -90,3 +92,5 @@ const Slider = () => {
 };
 
 export default Slider;
+
+
