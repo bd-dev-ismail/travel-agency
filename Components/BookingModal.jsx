@@ -1,4 +1,4 @@
-import NextPayment from "../Components/NextPayment";
+
 const BookingModal = ({booking, setBooking}) => {
     
   return (
@@ -15,7 +15,7 @@ const BookingModal = ({booking, setBooking}) => {
           </label>
           <h3 className="text-lg font-bold">{booking?.name}</h3>
          <div>
-            <NextPayment/>
+            {/* <NextPayment/> */}
          </div>
         </div>
       </div>
